@@ -216,17 +216,17 @@
 #########
 
 <opgc.fr/vobs/WP11/DDSS-036/GAZVOLC/dataset/INCLUSION-GLASS> a dcat:Dataset ;
-        dct:title "Melt inclusion and groundmass glass composition" ;
-        dct:identifier "opgc.fr/vobs/WP11/DDSS-036/GAZVOLC/dataset/INCLUSION-GLASS" ; 
-        dct:description "Melt inclusion and groundmass glass compositione" ;
-        adms:identifier [ a adms:Identifier;
-            adms:schemaAgency "DDSS-ID";
-            skos:notation "WP11-DDSS-036";
-        ];
+    dct:title "Melt inclusion and groundmass glass composition" ;
+    dct:identifier "opgc.fr/vobs/WP11/DDSS-036/GAZVOLC/dataset/INCLUSION-GLASS" ; 
+    dct:description "Melt inclusion and groundmass glass compositione" ;
+    adms:identifier [ a adms:Identifier;
+    	adms:schemaAgency "DDSS-ID";
+    	skos:notation "WP11-DDSS-036";
+    ];
     dct:type "http://purl.org/dc/dcmitype/Dataset"^^xsd:anyURI;
     dct:accrualPeriodicity "http://purl.org/cld/freq/irregular"^^xsd:anyURI;
     dct:temporal [ a dct:PeriodOfTime;
-        schema:startDate "201406-01T20:00:00Z"^^xsd:dateTime;
+        schema:startDate "2014-06-01T20:00:00Z"^^xsd:dateTime;
     ];
     dct:spatial [ a dct:Location; 
 		locn:geometry "POLYGON(55.6307 -21.3423, 55.8247 -21.3423, 55.8247 -21.1828, 55.6307 -21.1828, 55.6307 -21.3423)"^^gsp:wktLiteral; 
