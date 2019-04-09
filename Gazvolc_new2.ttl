@@ -274,7 +274,7 @@
     schema:keywords "Virtual Observatory", "Database", "Data Catalog", "chemical data set", "melt inclusion", "volatile elements", "major elements", "trace elements", "groundmass", "host minerals";
     hydra:entrypoint "http://opgc.fr/vobs/rest2/req.php/application/gazvolc"^^xsd:anyURI;
     hydra:supportedOperation <opgc.fr/vobs/gazvolc/WP11/DDSS-036/data-catalog>;
-    hydra:supportedOperation <opgc.fr/vobs/gazvolc/WP11/DDSS-036/data-dowload>;
+    hydra:supportedOperation <opgc.fr/vobs/gazvolc/WP11/DDSS-036/data-download>;
     dcat:theme <epos:Geochemical-Data>;
     schema:license "https://creativecommons.org/licenses/by-nc/4.0/"^^xsd:anyURI;
     dct:conformsTo <opgc.fr/vobs/APIDocumentation>;
