@@ -108,11 +108,46 @@
     schema:contactPoint <http://orcid.org/0000-0002-7635-1283/scientificContact>;
 .
 
+#########
+# ContactPoint
+#########
+
+<http://orcid.org/0000-0002-4518-3328/scientificContact> a schema:ContactPoint;
+	schema:email "p.labazuy@opgc.fr";
+	schema:availableLanguage "en", "fr" ;
+	schema:contactType "scientificContact" ;
+. 
+<http://orcid.org/0000-0002-0108-5486/legalContact> a schema:ContactPoint;
+	schema:email "n.huret@opgc.fr";
+	schema:availableLanguage "en", "fr" ;
+	schema:contactType "legalContact" ;
+.
+<http://orcid.org/0000-0002-0108-5486/financialContact> a schema:ContactPoint;
+	schema:email "n.huret@opgc.fr";
+	schema:availableLanguage "en", "fr" ;
+	schema:contactType "financialContact" ;
+.
+<http://orcid.org/0000-0002-8485-0154/contactPoint> a schema:ContactPoint;
+	schema:email "s.moune@uca.fr";
+	schema:availableLanguage "en", "it", "fr";
+	schema:contactType "manager";
+.
+<http://orcid.org/0000-0002-7635-1283/scientificContact> a schema:ContactPoint;
+	schema:email "dimuro@ipgp.fr";
+	schema:availableLanguage "en", "it", "fr";
+	schema:contactType "scientificContact";
+.
+
+#########
+# Organization
+#########
+
 <http://isni.org/isni/0000000109416043> a schema:Organization;
     schema:identifier [ a schema:PropertyValue;
         schema:propertyID "ISNI";
         schema:value "http://isni.org/isni/0000000109416043";
     ];
+    schema:leiCode "Legal Entity Identifier" ;
     schema:legalName "Earth Physics Observatory of Clermont-Ferrand"^^xsd:string;
     # schema:alternateName "Observatoire de Physique du Globe de Clermont-Ferrand"^^xsd:string;
     # schema:alternateName "OPGC"^^xsd:string;
@@ -133,43 +168,12 @@
     schema:memberOf <http://isni.org/isni/0000000121129282>;
 .
 
-
-    <http://orcid.org/0000-0002-4518-3328/scientificContact> a schema:ContactPoint;
-        schema:email "p.labazuy@opgc.fr";
-        schema:availableLanguage "en", "fr" ;
-	schema:contactType "scientificContact" ;
-. 
-    <http://orcid.org/0000-0002-0108-5486/legalContact> a schema:ContactPoint;
-        schema:email "n.huret@opgc.fr";
-        schema:availableLanguage "en", "fr" ;
-        schema:contactType "legalContact" ;
-.
-    <http://orcid.org/0000-0002-0108-5486/financialContact> a schema:ContactPoint;
-        schema:email "n.huret@opgc.fr";
-        schema:availableLanguage "en", "fr" ;
-        schema:contactType "financialContact" ;
-.
-<http://orcid.org/0000-0002-8485-0154/contactPoint> a schema:ContactPoint;
-        schema:email "s.moune@uca.fr";
-        schema:availableLanguage "en", "it", "fr";
-        schema:contactType "manager";
-.
-
-    <http://orcid.org/0000-0002-7635-1283/scientificContact> a schema:ContactPoint;
-        schema:email "dimuro@ipgp.fr";
-        schema:availableLanguage "en", "it", "fr";
-        schema:contactType "scientificContact";
-.
-
-#########
-# Organization
-#########
-
 <PIC:999597417> a schema:Organization;
     schema:identifier [ a schema:PropertyValue;
         schema:PropertyID "PIC";
         schema:value "999597417";
     ];
+    schema:leiCode "Legal Entity Identifier" ;
     schema:legalName "Earth Physics Institute of Paris"^^xsd:string;
     # schema:alternateName "Institut de Physique du Globe de Paris"^^xsd:string;
     # schema:alternateName "IPGP"^^xsd:string;
@@ -192,6 +196,7 @@
         schema:propertyID "ISNI";
         schema:value "http://isni.org/isni/0000000121129282";
     ];
+    schema:leiCode "Legal Entity Identifier" ;
     schema:legalName "The National Center for Scientific Research"^^xsd:string;
     # schema:alternateName "CNRS: Le Centre National de la Recherche Scientifique"^^xsd:string;
     # schema:alternateName "CNRS"^^xsd:string;
@@ -210,10 +215,10 @@
 # Dataset
 #########
 
-<gazvolc/dataset/036> a dcat:Dataset ;
-        dct:identifier "gazvolc/dataset/036" ;
-        dct:title "Melt inclusion and groundmass glass compositions - explosive_effusive" ;
-        dct:description "Melt inclusion and groundmass glass compositions - explosive_effusive" ;
+<opgc.fr/vobs/WP11/DDSS-036/GAZVOLC/dataset/INCLUSION-GLASS> a dcat:Dataset ;
+        dct:title "Melt inclusion and groundmass glass composition" ;
+        dct:identifier "opgc.fr/vobs/WP11/DDSS-036/GAZVOLC/dataset/INCLUSION-GLASS" ; 
+        dct:description "Melt inclusion and groundmass glass compositione" ;
         adms:identifier [ a adms:Identifier;
             adms:schemaAgency "DDSS-ID";
             skos:notation "WP11-DDSS-036";
@@ -221,9 +226,11 @@
     dct:type "http://purl.org/dc/dcmitype/Dataset"^^xsd:anyURI;
     dct:accrualPeriodicity "http://purl.org/cld/freq/irregular"^^xsd:anyURI;
     dct:temporal [ a dct:PeriodOfTime;
-        schema:startDate "0001-01-01T00:00:00Z"^^xsd:dateTime;
-        #schema:endDate "9999-12-31T23:59:59Z"^^xsd:dateTime;
+        schema:startDate "201406-01T20:00:00Z"^^xsd:dateTime;
     ];
+    dct:spatial [ a dct:Location; 
+		locn:geometry "POLYGON(55.6307 -21.3423, 55.8247 -21.3423, 55.8247 -21.1828, 55.6307 -21.1828, 55.6307 -21.3423)"^^gsp:wktLiteral; 
+    ]; 		
     dcat:theme <epos:GeochemicalData>;
     dcat:keyword "chemical data set", "melt inclusion", "volatile elements", "major elements", "trace elements", "groundmass", "host minerals";
     dcat:contactPoint <http://orcid.org/0000-0002-8485-0154/contactPoint>;
