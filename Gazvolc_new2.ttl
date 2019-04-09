@@ -16,26 +16,9 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix gsp: <http://www.opengis.net/ont/geosparql#> .
 
-<gazvolc/dataset/036> a dcat:Dataset ;
-        dct:identifier "gazvolc/dataset/036" ;
-        dct:title "Melt inclusion and groundmass glass compositions - explosive_effusive" ;
-        dct:description "Melt inclusion and groundmass glass compositions - explosive_effusive" ;
-        adms:identifier [ a adms:Identifier;
-            adms:schemaAgency "DDSS-ID";
-            skos:notation "WP11-DDSS-036";
-        ];
-    dct:type "http://purl.org/dc/dcmitype/Dataset"^^xsd:anyURI;
-    dct:accrualPeriodicity "http://purl.org/cld/freq/irregular"^^xsd:anyURI;
-    dct:temporal [ a dct:PeriodOfTime;
-        schema:startDate "0001-01-01T00:00:00Z"^^xsd:dateTime;
-        #schema:endDate "9999-12-31T23:59:59Z"^^xsd:dateTime;
-    ];
-    dcat:theme <epos:GeochemicalData>;
-    dcat:keyword "chemical data set", "melt inclusion", "volatile elements", "major elements", "trace elements", "groundmass", "host minerals";
-    dcat:contactPoint <http://orcid.org/0000-0002-8485-0154/contactPoint>;
-    dct:publisher <http://isni.org/isni/0000000109416043>;
-    dcat:distribution <gazvolc/dataset/036/distribution/ws>;
-.
+#########
+# PERSON 
+#########
 
 <http://orcid.org/0000-0002-8485-0154> a schema:Person;
     schema:identifier [ a schema:PropertyValue;
@@ -149,6 +132,8 @@
     schema:contactPoint <http://orcid.org/0000-0002-0108-5486/financialContact>;
     schema:memberOf <http://isni.org/isni/0000000121129282>;
 .
+
+
     <http://orcid.org/0000-0002-4518-3328/scientificContact> a schema:ContactPoint;
         schema:email "p.labazuy@opgc.fr";
         schema:availableLanguage "en", "fr" ;
@@ -164,6 +149,21 @@
         schema:availableLanguage "en", "fr" ;
         schema:contactType "financialContact" ;
 .
+<http://orcid.org/0000-0002-8485-0154/contactPoint> a schema:ContactPoint;
+        schema:email "s.moune@uca.fr";
+        schema:availableLanguage "en", "it", "fr";
+        schema:contactType "manager";
+.
+
+    <http://orcid.org/0000-0002-7635-1283/scientificContact> a schema:ContactPoint;
+        schema:email "dimuro@ipgp.fr";
+        schema:availableLanguage "en", "it", "fr";
+        schema:contactType "scientificContact";
+.
+
+#########
+# Organization
+#########
 
 <PIC:999597417> a schema:Organization;
     schema:identifier [ a schema:PropertyValue;
@@ -186,11 +186,6 @@
     schema:contactPoint <http://orcid.org/0000-0002-7635-1283/scientificContact>;
     schema:memberOf <http://isni.org/isni/0000000121129282>;
 .
-    <http://orcid.org/0000-0002-7635-1283/scientificContact> a schema:ContactPoint;
-        schema:email "dimuro@ipgp.fr";
-        schema:availableLanguage "en", "it", "fr";
-        schema:contactType "scientificContact";
-.
 
 <http://isni.org/isni/0000000121129282> a schema:Organization;
     schema:identifier [ a schema:PropertyValue;
@@ -211,11 +206,34 @@
     schema:telephone "+33144964000";
 .
 
- <http://orcid.org/0000-0002-8485-0154/contactPoint> a schema:ContactPoint;
-        schema:email "s.moune@uca.fr";
-        schema:availableLanguage "en", "it", "fr";
-        schema:contactType "manager";
+#########
+# Dataset
+#########
+
+<gazvolc/dataset/036> a dcat:Dataset ;
+        dct:identifier "gazvolc/dataset/036" ;
+        dct:title "Melt inclusion and groundmass glass compositions - explosive_effusive" ;
+        dct:description "Melt inclusion and groundmass glass compositions - explosive_effusive" ;
+        adms:identifier [ a adms:Identifier;
+            adms:schemaAgency "DDSS-ID";
+            skos:notation "WP11-DDSS-036";
+        ];
+    dct:type "http://purl.org/dc/dcmitype/Dataset"^^xsd:anyURI;
+    dct:accrualPeriodicity "http://purl.org/cld/freq/irregular"^^xsd:anyURI;
+    dct:temporal [ a dct:PeriodOfTime;
+        schema:startDate "0001-01-01T00:00:00Z"^^xsd:dateTime;
+        #schema:endDate "9999-12-31T23:59:59Z"^^xsd:dateTime;
+    ];
+    dcat:theme <epos:GeochemicalData>;
+    dcat:keyword "chemical data set", "melt inclusion", "volatile elements", "major elements", "trace elements", "groundmass", "host minerals";
+    dcat:contactPoint <http://orcid.org/0000-0002-8485-0154/contactPoint>;
+    dct:publisher <http://isni.org/isni/0000000109416043>;
+    dcat:distribution <gazvolc/dataset/036/distribution/ws>;
 .
+
+#########
+# Distributions
+#########
 
 <gazvolc/dataset/036/distribution/ws> a dcat:Distribution;
         dct:identifier "gazvolc/dataset/036/distribution/ws";
@@ -229,6 +247,9 @@
         dct:license "http://creativecommons.org/licenses/by-nc/4.0/"^^xsd:anyURI;
 .
 
+#########
+# WebService
+#########
 
 <opgc.fr/vobs/gazvolc/WP11/DDSS-036> a epos:WebService;
     schema:identifier "opgc.fr/vobs/gazvolc/WP11/DDSS-036";
@@ -245,6 +266,10 @@
     dct:conformsTo <opgc.fr/vobs/APIDocumentation>;
     dcat:contactPoint <http://orcid.org/0000-0002-8485-0154/contactPoint>;
 .
+
+#########
+# Operations
+######### 
    
  <opgc.fr/vobs/gazvolc/WP11/DDSS-036/data-download> a hydra:Operation;
         hydra:method "GET"^^xsd:string;
@@ -277,12 +302,17 @@
         hydra:description "A documentation describing how to use OPGC Virtual Observatory API to find and download data";
         hydra:entrypoint "http://opgc.fr/vobs/api.php"^^xsd:anyURI;
 .
-    <epos:VolcanoObservations> a skos:ConceptScheme;
-        dct:title "Volcano Observations";
-        dct:description "It contains the concept of Volcanological observations";
+
+#########
+# Concept
+#########
+
+<epos:VolcanoObservations> a skos:ConceptScheme;
+	dct:title "Volcano Observations";
+	dct:description "It contains the concept of Volcanological observations";
 .
-    <epos:GeochemicalData> a skos:Concept;
-            skos:definition "Geochemical data" ;
-            skos:inScheme <epos:VolcanoObservations>;
-            skos:prefLabel "Geochemical data";
+<epos:GeochemicalData> a skos:Concept;
+    skos:definition "Geochemical data" ;
+    skos:inScheme <epos:VolcanoObservations>;
+    skos:prefLabel "Geochemical data";
 .
