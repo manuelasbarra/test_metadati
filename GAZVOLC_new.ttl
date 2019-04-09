@@ -226,7 +226,7 @@
     dct:spatial [ a dct:Location;
         locn:geometry "POLYGON((55.6307 -21.3423, 55.8247 -21.3423, 55.8247 -21.1828, 55.6307 -21.1828, 55.6307 -21.3423))"^^gsp:wktLiteral;
     ];
-    dcat:theme <epos:GeochemicalData>;
+    dcat:theme <epos:Geochemical-Data>;
     dcat:keyword "chemical data set", "melt inclusion", "volatile elements", "major elements", "trace elements", "groundmass", "host minerals";
     dcat:contactPoint <http://orcid.org/0000-0002-8485-0154/contactPoint>;
     dct:publisher <http://isni.org/isni/0000000109416043>;
