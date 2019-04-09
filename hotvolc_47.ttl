@@ -168,7 +168,7 @@
         dct:accrualPeriodicity "http://purl.org/cld/freq/irregular"^^xsd:anyURI;
         dct:type "http://purl.org/dc/dcmitype/Image"^^xsd:anyURI;
         dct:temporal [ a dct:PeriodOfTime;
-                     schema:startDate "2010-015-06T00:00:00Z"^^xsd:dateTime;
+                     schema:startDate "2010-15-06T00:00:00Z"^^xsd:dateTime;
         ];
         dct:issued "2018-09-05T00:00:00Z"^^xsd:dateTime ;
         dct:modified "2019-03-26T10:40:00Z"^^xsd:dateTime;
