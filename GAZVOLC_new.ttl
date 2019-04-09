@@ -17,7 +17,7 @@
 @prefix gsp: <http://www.opengis.net/ont/geosparql#> .
 
 #########
-# PERSON 
+# PERSON #
 #########
 
 <http://orcid.org/0000-0002-8485-0154> a schema:Person;
