@@ -173,36 +173,36 @@
         dct:issued "2018-09-05T00:00:00Z"^^xsd:dateTime ;
         dct:modified "2019-03-26T10:40:00Z"^^xsd:dateTime;
         dct:spatial [ a dct:Location;
-        # geometry of zone: Iceland
-        locn:geometry "POLYGON((-28 57, -1.5 57, -1.5 68.5, -28 68.5, -28 57))"^^gsp:wktLiteral;
-        # geometry of zone: Azores
-        locn:geometry "POLYGON((-34.5 34, -23.5 34, -23.5 43, -34.5 43, -34.5 34))"^^gsp:wktLiteral;
-        # geometry of zone: Italy
-        locn:geometry "POLYGON((10.5 33.150002, 27 33.150002, 27 41.200001, 10.5 41.200001, 10.5 33.150002))"^^gsp:wktLiteral;
-        # geometry of zone: Canary
-        locn:geometry "POLYGON((-22.48 23, -11 23, -11 33, -22.48 33, -22.48 23))"^^gsp:wktLiteral;
-        # geometry of zone: West Indies
-        locn:geometry "POLYGON((-67.199997 7.1999998, -56 7.1999998, -56 21.5, -67.199997 21.5, -67.199997 7.1999998))"^^gsp:wktLiteral;
-        # geometry of zone: Cape Verde
-        locn:geometry "POLYGON((-29.34 9.8500004, -19.34 9.8500004, -19.34 19.85, -29.34 19.85, -29.34 9.8500004))"^^gsp:wktLiteral;
-        # geometry of zone: Rift
-        locn:geometry "POLYGON((38 10.5, 45.5 10.5, 45.5 17.5, 38 17.5, 38 10.5))"^^gsp:wktLiteral;
-        # geometry of zone: Cameroon
-        locn:geometry "POLYGON((3.76 -2.51, 14.16 -2.51, 14.16 9.1400003, 3.76 9.1400003, 3.76 -2.51))"^^gsp:wktLiteral;
-        # geometry of zone: East Africa
-        locn:geometry "POLYGON((24.190001 -8.3100004, 41.75 -8.3100004, 41.75 7.5300002, 24.190001 7.5300002, 24.190001 -8.3100004))"^^gsp:wktLiteral;
-        # geometry of zone: Karthala
-        locn:geometry "POLYGON((38.369999 -16.91, 48.369999 -16.91, 48.369999 -6.9099998, 38.369999 -6.9099998, 38.369999 -16.91))"^^gsp:wktLiteral;
-        # geometry of zone: Reunion
-        locn:geometry "POLYGON((50.709999 -26.309999, 60.709999 -26.309999, 60.709999 -16.309999, 50.709999 -16.309999, 50.709999 -26.309999))"^^gsp:wktLiteral;
-        # geometry of zone: France
-        locn:geometry "POLYGON((-5 42, 8.25 42, 8.25 51.5, -5 51.5, -5 42))"^^gsp:wktLiteral;
+		# geometry of zone: Iceland
+		locn:geometry "POLYGON((-28 57, -1.5 57, -1.5 68.5, -28 68.5, -28 57))"^^gsp:wktLiteral;
+		# geometry of zone: Azores
+		locn:geometry "POLYGON((-34.5 34, -23.5 34, -23.5 43, -34.5 43, -34.5 34))"^^gsp:wktLiteral;
+		# geometry of zone: Italy
+		locn:geometry "POLYGON((10.5 33.150002, 27 33.150002, 27 41.200001, 10.5 41.200001, 10.5 33.150002))"^^gsp:wktLiteral;
+		# geometry of zone: Canary
+		locn:geometry "POLYGON((-22.48 23, -11 23, -11 33, -22.48 33, -22.48 23))"^^gsp:wktLiteral;
+		# geometry of zone: West Indies
+		locn:geometry "POLYGON((-67.199997 7.1999998, -56 7.1999998, -56 21.5, -67.199997 21.5, -67.199997 7.1999998))"^^gsp:wktLiteral;
+		# geometry of zone: Cape Verde
+		locn:geometry "POLYGON((-29.34 9.8500004, -19.34 9.8500004, -19.34 19.85, -29.34 19.85, -29.34 9.8500004))"^^gsp:wktLiteral;
+		# geometry of zone: Rift
+		locn:geometry "POLYGON((38 10.5, 45.5 10.5, 45.5 17.5, 38 17.5, 38 10.5))"^^gsp:wktLiteral;
+		# geometry of zone: Cameroon
+		locn:geometry "POLYGON((3.76 -2.51, 14.16 -2.51, 14.16 9.1400003, 3.76 9.1400003, 3.76 -2.51))"^^gsp:wktLiteral;
+		# geometry of zone: East Africa
+		locn:geometry "POLYGON((24.190001 -8.3100004, 41.75 -8.3100004, 41.75 7.5300002, 24.190001 7.5300002, 24.190001 -8.3100004))"^^gsp:wktLiteral;
+		# geometry of zone: Karthala
+		locn:geometry "POLYGON((38.369999 -16.91, 48.369999 -16.91, 48.369999 -6.9099998, 38.369999 -6.9099998, 38.369999 -16.91))"^^gsp:wktLiteral;
+		# geometry of zone: Reunion
+		locn:geometry "POLYGON((50.709999 -26.309999, 60.709999 -26.309999, 60.709999 -16.309999, 50.709999 -16.309999, 50.709999 -26.309999))"^^gsp:wktLiteral;
+		# geometry of zone: France
+		locn:geometry "POLYGON((-5 42, 8.25 42, 8.25 51.5, -5 51.5, -5 42))"^^gsp:wktLiteral;
         ];
         dcat:theme <epos:Atmosphericmonitoring>;
         dcat:keyword "volcanic ash", "brightness temperature difference", "geotiff", "atmospheric monitoring";
         dcat:contactPoint <http://orcid.org/0000-0001-8720-7300/contactPoint>;
-        dct:license "https://creativecommons.org/licenses/by-nc/4.0/"^^xsd:anyURI;
-        dct:publisher <http://isni.org/isni/0000000109416043>;
+	dct:publisher <http://isni.org/isni/0000000109416043>;
+        dct:license "https://creativecommons.org/licenses/by-nc/4.0/"^^xsd:anyURI;  
         dcat:distribution <hotvolc.opgc.fr/WP11/DDSS-047/Distribution>
 .
 
