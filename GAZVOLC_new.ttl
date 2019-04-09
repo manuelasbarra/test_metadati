@@ -210,9 +210,9 @@
 # Dataset
 #########
 
-<opgc.fr/vobs/WP11/DDSS-036/GAZVOLC/dataset/INCLUSION-GLASS> a dcat:Dataset ;
+<GAZVOLC/dataset> a dcat:Dataset ;
         dct:title "Melt inclusions and groundmass glass compostion";
-        dct:identifier "opgc.fr/vobs/WP11/DDSS-036/GAZVOLC/dataset/INCLUSION-GLASS";
+        dct:identifier "GAZVOLC/dataset";
         dct:description "Chemical analysis of melt inclusion and glass in rock samples from Piton de la Fournaise volcano" ;
         adms:identifier [ a adms:Identifier;
             adms:schemaAgency "DDSS-ID";
@@ -230,14 +230,14 @@
     dcat:keyword "chemical data set", "melt inclusion", "volatile elements", "major elements", "trace elements", "groundmass", "host minerals";
     dcat:contactPoint <http://orcid.org/0000-0002-8485-0154/contactPoint>;
     dct:publisher <http://isni.org/isni/0000000109416043>;
-    dcat:distribution <opgc.fr/vobs/WP11/DDSS-036/GAZVOLC/Distribution>;
+    dcat:distribution <GAZVOLC/Distribution>;
 .
 
 #########
 # Distributions
 ######### 
 
-<opgc.fr/vobs/WP11/DDSS-036/GAZVOLC/Distribution> a dcat:Distribution;
+<GAZVOLC/Distribution> a dcat:Distribution;
     dct:identifier "opgc.fr/vobs/WP11/DDSS-036/GAZVOLC/Distribution";
     dct:title "The way to download dataset from GAZVOLC";
     dct:description "The way to download the gazvolc product: June 2014";
