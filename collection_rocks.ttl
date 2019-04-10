@@ -71,7 +71,7 @@
     schema:givenName "Nathalie";
     schema:address [ a schema:PostalAddress;
         schema:streetAddress "OPGC, 4 Avenue Blaise Pascal"^^xsd:string;
-        schema:addressLocality "AUBIERE CEDEX";
+        schema:addressLocality "AUBIERE CEDEX"^^xsd:string;
         schema:postalCode "63178";
         schema:addressCountry "FRANCE";
     ];
@@ -120,7 +120,7 @@
     # schema:alternateName "OPGC"^^xsd:string;
     schema:address [ a schema:PostalAddress;
         schema:streetAddress "OPGC, 4 Avenue Blaise Pascal";
-        schema:addressLocality "AUBIERE CEDEX";
+        schema:addressLocality "AUBIERE CEDEX"^^xsd:string;
 	      schema:postalCode "63178";
         schema:addressCountry "FRANCE";
     ];
