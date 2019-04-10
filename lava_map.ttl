@@ -160,7 +160,7 @@
 <opgc.fr/vobs/WP11/DDSS-051/dataset> a dcat:Dataset ;
         dct:title "InSar Observatory of Indian Ocean - Catalog of Lava maps calculated from InSAR interferograms"^^xsd:string;
         dct:identifier "opgc.fr/vobs/WP11/DDSS-051/dataset" ;
-        dct:description "Catalog of Lava maps calculated from Wrapped Differential Interferogram made using data from SENTINEL, COSMOSKYMED and TERRASAR-X Satellites - target: Piton de la Fournaise - Reunion island FRANCE";";
+        dct:description "Catalog of Lava maps calculated from Wrapped Differential Interferogram made using data from SENTINEL, COSMOSKYMED and TERRASAR-X Satellites - target: Piton de la Fournaise - Reunion island FRANCE";
         adms:identifier [ a adms:Identifier;
             adms:schemaAgency "DDSS-ID";
             skos:notation "WP11-DDSS-024";
