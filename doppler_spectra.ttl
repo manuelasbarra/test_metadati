@@ -238,7 +238,7 @@
 ######### 
 
 <opgc.fr/vobs/voldorad/WP11/DDSS-053/spectra> a hydra:Operation;
-        hydra:method "REST"^^xsd:string;
+        hydra:method "GET"^^xsd:string;
         hydra:returns "application/json";
         hydra:property [ a hydra:IriTemplate;
             hydra:template "http://opgc.fr/vobs/rest2/req.php/voldorad/spectra/{startDate}/{endDate}"^^xsd:string;
