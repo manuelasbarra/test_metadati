@@ -181,7 +181,7 @@
     dct:spatial [ a dct:Location;
         locn:geometry "POINT(15.00361 37.7189)"^^xsd:string;
     ];
-    dcat:theme <epos:epos:DopplerRadar>;
+    dcat:theme <epos:DopplerRadar>;
     dcat:keyword "Virtual Observatory", "Database", "Data Catalog", "ground-based", "remote-sensing", "doppler effect", "radar", "spectra", "velocity", "particles", "source parameters", "mount etna";
     dcat:contactPoint <http://orcid.org/0000-0001-8293-1340/contactPoint>;
     dct:publisher <http://isni.org/isni/0000000109416043>;
