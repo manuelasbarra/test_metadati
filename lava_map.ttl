@@ -171,12 +171,15 @@
         dct:temporal [ a dct:PeriodOfTime;
             schema:startDate "1998-01-01T00:00:00"^^xsd:dateTime;
         ];
+        dct:issued "2017-06-21"^^xsd:dateTime;
+        dct:modified "2017-06-21"^^xsd:dateTime;
         dct:spatial [ a dct:Location;
             locn:geometry "POLYGON((55.622471 -21.182913, 55.82473 -21.338009, 55.823513 -21.33647, 55.62104 )))"^^gsp:wktLiteral;
         ];       
         dcat:theme <epos:RadarInterferometry>;
         dcat:keyword "radar", "interferometry", "Reunion", "Piton de la Fournaise", "deformation", "SENTINEL", "COSMOSKYMED", "TERRASAR-X";
         dcat:contactPoint <http://www.researcherid.com/rid/O-8042-2014/contactPoint>;
+        dct:publisher <http://isni.org/isni/0000000109416043>;
         schema:license "https://creativecommons.org/licenses/by-nc/4.0/"^^xsd:anyURI;
         dcat:distribution <opgc.fr/vobs/WP11/DDSS-051/dataset/distribution>;
 .
