@@ -211,26 +211,26 @@
 #########  
 
 <opgc.fr/vobs/WP11/DDSS-036/DYNVOLC/dataset/GEOCHEMICAL> a dcat:Dataset ;
-        dct:title "Geochemical analysis of rocks sample" ;
-        dct:identifier "opgc.fr/vobs/WP11/DDSS-036/DYNVOLC/dataset/GEOCHEMICAL" ;
-        dct:description "Geochemical analysis and physical properties of gas, water and rocks of eruptive periods - Piton de La Fournaise - explosive_effusive";
-        adms:identifier [ a adms:Identifier;
-            adms:schemaAgency "DDSS-ID";
-            skos:notation "WP11-DDSS-036";
-        ];
-        dct:type "http://purl.org/dc/dcmitype/Dataset"^^xsd:anyURI;
-        dct:accrualPeriodicity "http://purl.org/cld/freq/irregular"^^xsd:anyURI;
-        dct:temporal [ a dct:PeriodOfTime;
-            schema:startDate "2014-06-20T21:35:00Z"^^xsd:dateTime;
-        ];
-        dct:spatial [ a dct:Location;
-            locn:geometry "POLYGON((55.6307 -21.3423, 55.8247 -21.3423, 55.8247 -21.1828, 55.6307 -21.1828, 55.6307 -21.3423))"^^gsp:wktLiteral;
-        ];
-        dcat:theme <epos:GeochemicalData>;
-        dcat:keyword "eruption", "rock", "bulk rock", "volcanic glass", "mineral", "texture", "thin section", "particle", "major element", "vesicle crystal";
-        dcat:contactPoint <http://orcid.org/0000-0002-5066-5153/contactPoint>;
-        dct:publisher <http://isni.org/isni/0000000109416043>;
-        dcat:distribution <opgc.fr/vobs/WP11/DDSS-036/DYNVOLC/Distribution>;
+    dct:title "Geochemical analysis of rocks sample" ;
+    dct:identifier "opgc.fr/vobs/WP11/DDSS-036/DYNVOLC/dataset/GEOCHEMICAL" ;
+    dct:description "Geochemical analysis and physical properties of gas, water and rocks of eruptive periods - Piton de La Fournaise - explosive_effusive";
+    adms:identifier [ a adms:Identifier;
+	    adms:schemaAgency "DDSS-ID";
+	    skos:notation "WP11-DDSS-036";
+	];
+    dct:type "http://purl.org/dc/dcmitype/Dataset"^^xsd:anyURI;
+    dct:accrualPeriodicity "http://purl.org/cld/freq/irregular"^^xsd:anyURI; 
+    dct:temporal [ a dct:PeriodOfTime;
+        schema:startDate "2014-06-20T21:35:00Z"^^xsd:dateTime;
+    ];
+    dct:spatial [ a dct:Location;
+        locn:geometry "POLYGON((55.6307 -21.3423, 55.8247 -21.3423, 55.8247 -21.1828, 55.6307 -21.1828, 55.6307 -21.3423))"^^gsp:wktLiteral;
+    ];
+    dcat:theme <epos:GeochemicalData>;
+   dcat:keyword "eruption", "rock", "bulk rock", "volcanic glass", "mineral", "texture", "thin section", "particle", "major element", "vesicle crystal";
+   dcat:contactPoint <http://orcid.org/0000-0002-5066-5153/contactPoint>;
+   dct:publisher <http://isni.org/isni/0000000109416043>;
+   dcat:distribution <opgc.fr/vobs/WP11/DDSS-036/DYNVOLC/Distribution>;
 .
 
 #########
