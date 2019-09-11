@@ -94,7 +94,7 @@ schema:propertyID "researcherID";
 schema:value "A-5326-2010";
 ];
 
- schema:familyName "Mathilde";
+ schema:familyName "Vergnolle";
  schema:givenName "Mathilde";
 schema:address [ a schema:PostalAddress;
 schema:streetAddress "250 rue Albert Einstein";
